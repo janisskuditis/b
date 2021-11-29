@@ -1,0 +1,15 @@
+madt1, madt2, madt3, madt4, madt5 = ["","","",""], ["","","",""],["","","",""], ["","","",""],["","","",""]
+
+def pirmaisSpeletajs():
+    madt1[0] = input("KĀDS")
+    madt2[1] = input("KAS")
+    madt3[2] = input("KUR")
+    madt4[3] = input("KO DARIJA")
+    madt5[4] = input("KAS SANĀCA")
+
+if __name__=="__main__" :
+    print("Labdien, šīs spēles nosaukums ir ""KĀDS?KAS?KUR?KO-DARĪJA?KAS-SANĀCA?"" Šo spēli var spēlēt no 2 līdz 5 cilvēkiem. Katrs spēlētājs atbild uz jautājumu, aizloka lapiņu un padot tālāk nākamajam spēlētājam līdz ir atbildēts uz visiem jautājumiem. ")
+    speletajs1 = input("Kā sauc pirmo spēlētāju")
+    print(speletajs1 + ",Atbildi uz jautājumiem ")
+    pirmaisSpeletajs()
+    print(madt1)
