@@ -1,15 +1,66 @@
-madt1, madt2, madt3, madt4, madt5 = ["","","",""], ["","","",""],["","","",""], ["","","",""],["","","",""]
+madt1, madt2, madt3, madt4, madt5 = ["","","","",""], ["","","","",""],["","","","",""], ["","","","",""],["","","","",""]
 
-def pirmaisSpeletajs():
+def pirmaisspeletajs():
     madt1[0] = input("KĀDS")
-    madt2[1] = input("KAS")
-    madt3[2] = input("KUR")
+    madt5[1] = input("KAS")
+    madt4[2] = input("KUR")
+    madt3[3] = input("KO DARIJA")
+    madt2[4] = input("KAS SANĀCA")
+
+def otraisspeletajs():
+    madt2[0] = input("KĀDS")
+    madt1[1] = input("KAS")
+    madt5[2] = input("KUR")
     madt4[3] = input("KO DARIJA")
+    madt3[4] = input("KAS SANĀCA")
+
+def tresaisspeletajs():
+    madt3[0] = input("KĀDS")
+    madt2[1] = input("KAS")
+    madt1[2] = input("KUR")
+    madt5[3] = input("KO DARIJA")
+    madt4[4] = input("KAS SANĀCA")
+
+def ceturtaisspeletajs():
+    madt4[0] = input("KĀDS")
+    madt3[1] = input("KAS")
+    madt2[2] = input("KUR")
+    madt1[3] = input("KO DARIJA")
     madt5[4] = input("KAS SANĀCA")
 
-if __name__=="__main__" :
+def piektaisspeletajs():
+    madt5[0] = input("KĀDS")
+    madt4[1] = input("KAS")
+    madt3[2] = input("KUR")
+    madt2[3] = input("KO DARIJA")
+    madt1[4] = input("KAS SANĀCA")
+
+
+
+
+if __name__ == "__main__" :
     print("Labdien, šīs spēles nosaukums ir ""KĀDS?KAS?KUR?KO-DARĪJA?KAS-SANĀCA?"" Šo spēli var spēlēt no 2 līdz 5 cilvēkiem. Katrs spēlētājs atbild uz jautājumu, aizloka lapiņu un padot tālāk nākamajam spēlētājam līdz ir atbildēts uz visiem jautājumiem. ")
     speletajs1 = input("Kā sauc pirmo spēlētāju")
-    print(speletajs1 + ",Atbildi uz jautājumiem ")
-    pirmaisSpeletajs()
+    print(speletajs1 + ",Atbildi uz jautājumiem")
+    pirmaisspeletajs()
     print(madt1)
+
+    speletajs2 = input("Kā sauc otro spēlētāju")
+    print(speletajs2 + ",Atbildi uz jautajumiem")
+    otraisspeletajs()
+    print(madt2)
+
+    speletajs3 = input("Kā sauc trešo spēlētāju")
+    print(speletajs3 + ",Atbildi uz jautajumiem")
+    tresaisspeletajs()
+    print(madt3)
+
+    speletajs4 = input("Kā sauc ceturto spēlētāju")
+    print(speletajs4 + ",Atbildi uz jautajumiem")
+    ceturtaisspeletajs()
+    print(madt4)
+
+    speletajs5 = input("Kā sauc piekto spēlētāju")
+    print(speletajs5 + ",Atbildi uz jautajumiem")
+    piektaisspeletajs()
+    print(madt5)
